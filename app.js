@@ -10,7 +10,11 @@ app.use(bodyParser.json());
 
 app.post('/users',(req,res)=>{
 var users = new Users({
-    name: req.body.name
+    name: req.body.name,
+    age: req.body.age,
+    rollno: req.body.rollno,
+    admno: req.body.admno,
+    college: req.body.college
     // age:45
 });
 users.save().then((doc)=>{

@@ -10,6 +10,15 @@ var Users=mongoose.model('Users',{
     age:{
     type: Number,
     default: 67
+    },
+    rollno:{
+        type:Number
+    },
+    admno:{
+        type:String
+    },
+    college:{
+        type:String,
     }
     
     });
